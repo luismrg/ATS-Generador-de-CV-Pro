@@ -31,13 +31,13 @@ export default function ProfessionalProfileStep() {
           Perfil Profesional
         </h2>
         <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-          Un buen resumen puede captar la atención del reclutador en segundos.
+          Un buen perfil profesional puede captar la atención del reclutador en segundos.
         </p>
       </div>
 
       <div>
         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          Resumen profesional *
+          Perfil profesional *
           <span className="text-gray-400 ml-2 font-normal">({pp.summary.length}/500)</span>
         </label>
         <textarea
