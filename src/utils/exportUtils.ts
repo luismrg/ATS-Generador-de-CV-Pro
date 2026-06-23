@@ -14,7 +14,7 @@ export function generateTXT(data: CVData): string {
   lines.push('');
   
   if (data.professionalProfile.summary) {
-    lines.push('RESUMEN PROFESIONAL');
+    lines.push('PERFIL PROFESIONAL');
     lines.push(data.professionalProfile.summary);
     lines.push('');
   }
@@ -200,7 +200,7 @@ export function generateHTML(data: CVData, _templateName: string): string {
   </div>
 
   ${data.professionalProfile.summary ? `
-  <h2>Resumen Profesional</h2>
+  <h2>Perfil Profesional</h2>
   <p>${data.professionalProfile.summary}</p>
   ` : ''}
 
@@ -391,7 +391,7 @@ export async function exportDOCX(data: CVData, filename: string) {
   // Summary
   if (data.professionalProfile.summary) {
     children.push(
-      new Paragraph({ text: 'Resumen Profesional', heading: HeadingLevel.HEADING_2, spacing: { before: 200 } }),
+      new Paragraph({ text: 'Perfil Profesional', heading: HeadingLevel.HEADING_2, spacing: { before: 200 } }),
       new Paragraph({ text: data.professionalProfile.summary, spacing: { after: 200 } })
     );
   }

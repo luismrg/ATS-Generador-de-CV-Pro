@@ -35,7 +35,7 @@ export default function ExecutiveTemplate({ data }: { data: CVData }) {
           {/* Professional Summary */}
           {data.professionalProfile.summary && (
             <div>
-              <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 mb-2">Resumen Ejecutivo</h2>
+              <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 mb-2">Perfil Profesional</h2>
               <p className="text-sm leading-relaxed text-gray-700">{data.professionalProfile.summary}</p>
             </div>
           )}

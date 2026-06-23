@@ -47,7 +47,7 @@ export default function ClassicTemplate({ data }: { data: CVData }) {
       {/* Summary */}
       {hasData.summary && (
         <div className="mb-3.5">
-          <h2 className="text-[11pt] font-bold uppercase tracking-wider border-b border-gray-300 pb-0.5 mb-1.5">Resumen Profesional</h2>
+          <h2 className="text-[11pt] font-bold uppercase tracking-wider border-b border-gray-300 pb-0.5 mb-1.5">Perfil Profesional</h2>
           <p className="text-[10pt] leading-relaxed">{data.professionalProfile.summary}</p>
         </div>
       )}
