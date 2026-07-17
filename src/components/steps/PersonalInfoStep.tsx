@@ -209,7 +209,7 @@ export default function PersonalInfoStep() {
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               <Code2 className="w-3.5 h-3.5 inline mr-1" />
-              GitHub
+              GitHub / opcional
             </label>
             <input
               type="url"
